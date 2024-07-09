@@ -1,0 +1,11 @@
+package operacao_de_matrizes;
+
+public class HelloWorld {
+	//o que é o main mesmo?
+	//main é o entry point de qualquer aplicaçao JAVA, quando rodamos a JVM procura sempre pelo metodo main primeiro!
+	//o que é "String args"?
+	
+	public static void main() {
+		System.out.print("Hello World!");
+	}
+}

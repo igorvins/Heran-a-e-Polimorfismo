@@ -1,0 +1,9 @@
+package operacao_de_matrizes;
+
+public class HelloWorld {
+	//o que é o main mesmo?
+	//o que é "String args"?
+	public static void main(String args[]) {
+		System.out.print("Hello World!");
+	}
+}
