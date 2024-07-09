@@ -30,7 +30,7 @@ public class Disciplina {
             professor.Imprimir(prefixo + "\t\t");
         System.out.printf("%s\tAlunos:\n", prefixo);
         if (alunos.size() > 0) {
-            for (Pessoa a: alunos) {
+            for (Aluno a: alunos) {
                 a.Imprimir(prefixo + "\t\t");
             }
         } else {

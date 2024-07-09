@@ -6,7 +6,7 @@ public class Disciplina {
 	//---------instanciando propriedades------------------
 	private String nome;
 	private Pessoa professor;
-	private ArrayList<Pessoa> alunos = new ArrayList<Pessoa>();
+	private ArrayList<Aluno> alunos = new ArrayList<Aluno>();
 	//----------criando metodos para classe----------------
 	//metodo construtor:
 	public Disciplina(String nome_disciplina) {
@@ -17,7 +17,7 @@ public class Disciplina {
 		professor = prof;
 	}
 	//metodo para incluir um aluno:
-	public void IncluirAluno(Pessoa aluno) {
+	public void IncluirAluno(Aluno aluno) {
 		alunos.add(aluno);
 	}
 	//metodo para imprimir e verificações:
@@ -30,7 +30,7 @@ public class Disciplina {
             professor.Imprimir(prefixo + "\t\t");
         System.out.printf("%s\tAlunos:\n", prefixo);
         if (alunos.size() > 0) {
-            for (Pessoa a: alunos) {
+            for (Aluno a: alunos) {
                 a.Imprimir(prefixo + "\t\t");
             }
         } else {

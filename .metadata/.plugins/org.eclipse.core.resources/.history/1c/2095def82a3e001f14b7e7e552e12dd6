@@ -9,6 +9,6 @@ public abstract class Pessoa {
 	public Pessoa(String alguem) {
 		this.nome = alguem;
 	}
-	public abstract void Imprimir(String imprssao);
+	public abstract void imprimir();
 
 }

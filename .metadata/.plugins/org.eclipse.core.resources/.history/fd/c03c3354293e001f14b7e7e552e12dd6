@@ -2,6 +2,8 @@ package criacao_classes;
 
 public class Aluno extends Pessoa {
 	//----------declarando atributos(variaveis)----------------
+	//atributo privado do nome
+	private String nome;
 	//atributo privado do RA:
 	private long RA;
 	//-------------------criando metodos----------------------------
