@@ -18,6 +18,6 @@ public class Aluno extends Pessoa {
 	}
 	//metodo para imprimir info do aluno:
     public void Imprimir(String prefixo) {
-        System.out.printf("%s%s (RA %d)\n", prefixo, nome, RA);
+        System.out.printf("%s%s (RA %d)\n", prefixo, nome, RA, id);
     }
 }

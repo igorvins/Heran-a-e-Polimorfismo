@@ -4,9 +4,14 @@ import java.util.ArrayList;
 
 public class Curso {
 	//--------instanciando propriedades---------------------
+	public static String universidade = "UFABC";
 	private String nome;
 	private ArrayList<Disciplina> disciplinas= new ArrayList<Disciplina>();
 	//-----------criando metodos----------------------------
+	//criando metodo estatico:
+	static String gerarCodigoDisciplina(String nomeDisciplina) {
+		return universidade + "_" + nomeDisciplina;
+	}
 	//metodo construtor:
 	public Curso(String nome_curso) {
 		this.nome=nome_curso;
@@ -17,6 +22,7 @@ public class Curso {
 	}
 	//metodo para imprimir 
     public void Imprimir() {
+    	System.out.printf("%s\n", universidade);
         System.out.printf("Curso de %s:\n", nome);
         System.out.println("\tDisciplinas:");
         if (disciplinas.size() > 0) {

@@ -22,7 +22,7 @@ public class Disciplina {
 	}
 	//metodo para imprimir e verificações:
     public void Imprimir(String prefixo) {
-        System.out.printf("%s%s\n", prefixo, nome);
+        System.out.printf("%s%s\n", prefixo, nome, Curso.gerarCodigoDisciplina(nome));
         System.out.printf("%s\tProfessor:\n", prefixo);
         if (professor == null)
             System.out.printf("%s\t\t-vazio-\n", prefixo);
