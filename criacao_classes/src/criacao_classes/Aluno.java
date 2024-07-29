@@ -1,6 +1,7 @@
 package criacao_classes;
 
 public class Aluno extends Pessoa {
+	//Pessoa pessoa_aluno = new Pessoa();
 	//----------declarando atributos(variaveis)----------------
 	//atributo privado do RA:
 	private long RA;
@@ -16,8 +17,10 @@ public class Aluno extends Pessoa {
 	public void AtribuirRA(long ra) {
 		RA = ra;
 	}
+	
 	//metodo para imprimir info do aluno:
     public void Imprimir(String prefixo) {
-        System.out.printf("%s%s (RA %d)\n", prefixo, nome, RA, id);
+        System.out.printf("%s%s (RA %d)[%d]\n", prefixo, nome, RA, id);
     }
 }
+

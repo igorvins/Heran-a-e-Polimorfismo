@@ -10,10 +10,10 @@ public class Professor extends Pessoa {
 	}
 	//metodo para receber siape:
 	public void AtribuirSIAPE(long num) {
-		siape = num;
+		this.siape = num;
 	}
 	//metodo imprimir info professor:
     public void Imprimir(String prefixo) {
-        System.out.printf("%s%s (SIAPE %d)\n", prefixo, nome, siape, id);
+        System.out.printf("%s%s (SIAPE %d)[%d]\n", prefixo, nome, siape, id);
     }
 }
